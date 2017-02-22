@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidSpanUsage</string>
+
+    <string name="animated_span">Animated Span</string>
+    <string name="animated_span_desc">Animation with Object Animator</string>
+    <string name="java_language_intro">Java is a programming language. It was first developed by James Gosling at Sun Microsystems, which is now a part of Oracle Corporation. It was released in 1995 as a part of Sun Microsystems\' Java platform. The language has developed much of its syntax from C and C++. Java applications are usually compiled to bytecode (class file) that can run on any Java Virtual Machine (JVM).</string>
+    <string name="animated_sub_string">James Gosling at Sun Microsystems</string>
+    <string name="start_animation">Start Animation</string>
+    <string name="start_rainbow_animation">Start Rainbow Animation</string>
+</resources>
