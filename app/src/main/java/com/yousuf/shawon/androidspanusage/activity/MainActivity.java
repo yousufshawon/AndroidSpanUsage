@@ -19,7 +19,6 @@ public class MainActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         loadListViewResource();
 
         SimpleAdapter adapter = new SimpleAdapter(this, items,
@@ -42,6 +41,7 @@ public class MainActivity extends ListActivity {
     private void loadListViewResource(){
 
         items.add(new ListItem(this, AnimatedSpanActivity.class, R.string.animated_span, R.string.animated_span_desc));
+        items.add(new ListItem(this, SimpleSpanActivity.class, R.string.simple_span, R.string.simple_span_desc));
 
 
     }

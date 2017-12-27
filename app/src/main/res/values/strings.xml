@@ -7,4 +7,11 @@
     <string name="animated_sub_string">James Gosling at Sun Microsystems</string>
     <string name="start_animation">Start Animation</string>
     <string name="start_rainbow_animation">Start Rainbow Animation</string>
+
+    <string name="simple_span">Simple Span</string>
+    <string name="simple_span_desc">Some Simple Span Example</string>
+    <string name="sample_text_1">Some word of this sentence will be bold for demonstration.</string>
+    <string name="sample_text_2">Android official </string>
+    <string name="android_site_link">https://developer.android.com</string>
+    <string name="sample_text_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida, massa eget eleifend aliquam, quam sem luctus quam, eu ultrices nibh nulla dapibus odio. Vestibulum sagittis purus in sapien dapibus molestie. Nunc rutrum nunc ut lacus gravida, id accumsan eros pharetra. Integer tristique posuere erat eu sollicitudin. Pellentesque lacinia justo vel elit vestibulum ultricies.</string>
 </resources>
