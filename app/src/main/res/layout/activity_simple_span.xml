@@ -12,46 +12,104 @@
     >
 
 
-  <TextView
-      android:id="@+id/textView1"
+  <ScrollView
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="@string/sample_text_1"
-      android:layout_marginTop="8dp"
-      android:layout_marginBottom="8dp"
-      android:bufferType="spannable"
-      android:textSize="18sp"
-      />
+      android:layout_height="match_parent"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
 
-  <TextView
-      android:id="@+id/textView2"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text=""
-      android:layout_marginTop="8dp"
-      android:layout_marginBottom="8dp"
-      android:textSize="18sp"
-      />
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/sample_text_1"
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          android:bufferType="spannable"
+          style="@style/textViewStyle1"
+          />
 
-  <TextView
-      android:id="@+id/textView3"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text=""
-      android:layout_marginTop="8dp"
-      android:layout_marginBottom="8dp"
-      android:textSize="18sp"
-      />
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          style="@style/textViewStyle1"
+          />
 
-  <TextView
-      android:id="@+id/textView4"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text=""
-      android:layout_marginTop="8dp"
-      android:layout_marginBottom="8dp"
-      android:textSize="18sp"
-      />
+      <TextView
+          android:id="@+id/textView3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          style="@style/textViewStyle1"
+          />
+
+      <TextView
+          android:id="@+id/textView4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          style="@style/textViewStyle1"
+          />
+
+      <TextView
+          android:id="@+id/textView5"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          style="@style/textViewStyle1"
+          />
+
+      <TextView
+          android:id="@+id/textView6"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          style="@style/textViewStyle1"
+          />
+
+      <TextView
+          android:id="@+id/textView7"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          style="@style/textViewStyle1"
+          />
+
+      <TextView
+          android:id="@+id/textView8"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          style="@style/textViewStyle1"
+          />
+
+
+
+    </LinearLayout>
+
+  </ScrollView>
+
+
 
 
 

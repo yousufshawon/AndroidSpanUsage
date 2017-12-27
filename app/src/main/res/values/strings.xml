@@ -13,5 +13,7 @@
     <string name="sample_text_1">Some word of this sentence will be bold for demonstration.</string>
     <string name="sample_text_2">Android official </string>
     <string name="android_site_link">https://developer.android.com</string>
-    <string name="sample_text_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida, massa eget eleifend aliquam, quam sem luctus quam, eu ultrices nibh nulla dapibus odio. Vestibulum sagittis purus in sapien dapibus molestie. Nunc rutrum nunc ut lacus gravida, id accumsan eros pharetra. Integer tristique posuere erat eu sollicitudin. Pellentesque lacinia justo vel elit vestibulum ultricies.</string>
+    <string name="sample_text_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida, massa eget eleifend aliquam, quam sem luctus quam, eu ultrices nibh nulla dapibus odio. Vestibulum sagittis purus in sapien dapibus molestie. </string>
+    <string name="sample_text_4">Just as it is a good practice to make all fields private unless they need greater visibility, it is a good practice to make all fields final unless they need to be mutable.</string>
+
 </resources>

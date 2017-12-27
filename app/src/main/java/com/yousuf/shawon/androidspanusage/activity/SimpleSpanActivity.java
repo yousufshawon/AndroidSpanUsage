@@ -13,8 +13,12 @@ import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.text.style.AlignmentSpan;
 import android.text.style.ImageSpan;
+import android.text.style.StrikethroughSpan;
 import android.text.style.StyleSpan;
+import android.text.style.SubscriptSpan;
+import android.text.style.SuperscriptSpan;
 import android.text.style.URLSpan;
+import android.text.style.UnderlineSpan;
 import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -26,6 +30,10 @@ public class SimpleSpanActivity extends AppCompatActivity {
   @Bind(R.id.textView2) TextView textView2;
   @Bind(R.id.textView3) TextView textView3;
   @Bind(R.id.textView4) TextView textView4;
+  @Bind(R.id.textView5) TextView textView5;
+  @Bind(R.id.textView6) TextView textView6;
+  @Bind(R.id.textView7) TextView textView7;
+  @Bind(R.id.textView8) TextView textView8;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -39,6 +47,15 @@ public class SimpleSpanActivity extends AppCompatActivity {
     generateLinkSpan();
 
     generateAlignmentSpan();
+
+    generateUnderlineSpan();
+
+    generateStrikethroughSpan();
+
+    String str1 = getString(R.string.sample_text_4);
+
+    generateSpan(textView7, str1, new SubscriptSpan(), "greater" );
+    generateSpan(textView8, str1, new SuperscriptSpan(), "greater" );
 
 
   }
@@ -93,5 +110,48 @@ public class SimpleSpanActivity extends AppCompatActivity {
     textView4.setText(mSpannableString, TextView.BufferType.SPANNABLE);
 
   }
+
+
+  private void generateUnderlineSpan(){
+    String str = getString(R.string.sample_text_3);
+    UnderlineSpan underlineSpan =  new UnderlineSpan();
+
+    SpannableString mSpannableString = new SpannableString(str);
+    mSpannableString.setSpan(underlineSpan, str.length()/2 - 10, str.length()/2 + 10, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
+
+    textView5.setText(mSpannableString, TextView.BufferType.SPANNABLE);
+
+  }
+
+
+  private void generateStrikethroughSpan(){
+    String str = getString(R.string.sample_text_3);
+    StrikethroughSpan underlineSpan =  new StrikethroughSpan();
+
+    SpannableString mSpannableString = new SpannableString(str);
+    mSpannableString.setSpan(underlineSpan, str.length()/2 - 10, str.length()/2 + 10, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
+
+    textView6.setText(mSpannableString, TextView.BufferType.SPANNABLE);
+
+  }
+
+
+  private void generateSpan(TextView textView, String str, Object span, String search){
+
+    int start = str.length()/2 - 7;
+    int end = str.length()/2 + 7;
+
+    if (str.toLowerCase().contains(search)) {
+      start = str.toLowerCase().indexOf(search);
+      end = start + search.length();
+    }
+
+    SpannableString mSpannableString = new SpannableString(str);
+    mSpannableString.setSpan(span, start, end, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
+    textView.setText(mSpannableString, TextView.BufferType.SPANNABLE);
+
+  }
+
+
 
 }
